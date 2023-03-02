@@ -37,5 +37,5 @@ jobs:
             sudo docker stop lara
             sudo docker rm lara
             
-            sudo docker run -d -p 8000:8000 --name lara issiwara/ratings-data-service
+            sudo docker run -d -p 8000:8000 --name lara issiwara/laravelcrud
             sudo docker exec lara php artisan migrate
